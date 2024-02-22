@@ -3,10 +3,10 @@ package storage
 import (
 	"fmt"
 
-	corestore "cosmossdk.io/core/store"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/snapshots"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/snapshots"
 )
 
 const (

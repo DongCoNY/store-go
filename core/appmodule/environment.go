@@ -1,12 +1,12 @@
 package appmodule
 
 import (
-	"cosmossdk.io/core/branch"
-	"cosmossdk.io/core/event"
-	"cosmossdk.io/core/gas"
-	"cosmossdk.io/core/header"
-	"cosmossdk.io/core/store"
 	"cosmossdk.io/log"
+	"github.com/DongCoNY/store-go/core/branch"
+	"github.com/DongCoNY/store-go/core/event"
+	"github.com/DongCoNY/store-go/core/gas"
+	"github.com/DongCoNY/store-go/core/header"
+	"github.com/DongCoNY/store-go/core/store"
 )
 
 // Environment is used to get all services to their respective module

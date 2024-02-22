@@ -11,10 +11,10 @@ import (
 	"github.com/linxGnu/grocksdb"
 	"golang.org/x/exp/slices"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/storage"
-	"cosmossdk.io/store/v2/storage/util"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/storage"
+	"github.com/DongCoNY/store-go/store/storage/util"
 )
 
 const (

@@ -13,8 +13,8 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/snapshots/types"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 // Manager manages snapshot and restore operations for an app, making sure only a single

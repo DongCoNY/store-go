@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	dbm "cosmossdk.io/store/v2/db"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/commitment"
+	dbm "github.com/DongCoNY/store-go/store/db"
 )
 
 func TestCommitterSuite(t *testing.T) {

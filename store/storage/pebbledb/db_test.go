@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/storage"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/storage"
 )
 
 func TestStorageTestSuite(t *testing.T) {

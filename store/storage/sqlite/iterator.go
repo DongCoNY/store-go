@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	corestore "cosmossdk.io/core/store"
+	corestore "github.com/DongCoNY/store-go/core/store"
 )
 
 var _ corestore.Iterator = (*iterator)(nil)

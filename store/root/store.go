@@ -9,11 +9,11 @@ import (
 	"github.com/cockroachdb/errors"
 	"golang.org/x/sync/errgroup"
 
-	coreheader "cosmossdk.io/core/header"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/metrics"
-	"cosmossdk.io/store/v2/proof"
+	coreheader "github.com/DongCoNY/store-go/core/header"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/metrics"
+	"github.com/DongCoNY/store-go/store/proof"
 )
 
 var _ store.RootStore = (*Store)(nil)

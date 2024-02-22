@@ -4,8 +4,8 @@ import (
 	"golang.org/x/sync/errgroup"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/snapshots"
 )
 
 const (

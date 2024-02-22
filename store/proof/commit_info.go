@@ -6,7 +6,7 @@ import (
 	"sort"
 	"time"
 
-	"cosmossdk.io/store/v2/internal/encoding"
+	"github.com/DongCoNY/store-go/store/internal/encoding"
 )
 
 type (

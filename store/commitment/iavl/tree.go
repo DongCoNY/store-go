@@ -7,9 +7,9 @@ import (
 	ics23 "github.com/cosmos/ics23/go"
 
 	log "cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	dbm "cosmossdk.io/store/v2/db"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/commitment"
+	dbm "github.com/DongCoNY/store-go/store/db"
 )
 
 var _ commitment.Tree = (*IavlTree)(nil)

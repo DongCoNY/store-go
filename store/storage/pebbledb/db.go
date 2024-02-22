@@ -10,9 +10,9 @@ import (
 
 	"github.com/cockroachdb/pebble"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/storage"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/storage"
 )
 
 const (

@@ -16,10 +16,10 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/snapshots"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/DongCoNY/store-go/store"
+	dbm "github.com/DongCoNY/store-go/store/db"
+	"github.com/DongCoNY/store-go/store/snapshots"
+	snapshotstypes "github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 func checksums(slice [][]byte) [][]byte {

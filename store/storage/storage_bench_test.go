@@ -13,11 +13,11 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/storage"
-	"cosmossdk.io/store/v2/storage/pebbledb"
-	"cosmossdk.io/store/v2/storage/rocksdb"
-	"cosmossdk.io/store/v2/storage/sqlite"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/storage"
+	"github.com/DongCoNY/store-go/store/storage/pebbledb"
+	"github.com/DongCoNY/store-go/store/storage/rocksdb"
+	"github.com/DongCoNY/store-go/store/storage/sqlite"
 )
 
 const (

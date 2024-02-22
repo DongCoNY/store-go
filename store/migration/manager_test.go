@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/commitment/iavl"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/snapshots"
-	"cosmossdk.io/store/v2/storage"
-	"cosmossdk.io/store/v2/storage/pebbledb"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/commitment"
+	"github.com/DongCoNY/store-go/store/commitment/iavl"
+	dbm "github.com/DongCoNY/store-go/store/db"
+	"github.com/DongCoNY/store-go/store/snapshots"
+	"github.com/DongCoNY/store-go/store/storage"
+	"github.com/DongCoNY/store-go/store/storage/pebbledb"
 )
 
 var storeKeys = []string{"store1", "store2"}

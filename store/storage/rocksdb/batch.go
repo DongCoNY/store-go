@@ -8,7 +8,7 @@ import (
 
 	"github.com/linxGnu/grocksdb"
 
-	"cosmossdk.io/store/v2"
+	"github.com/DongCoNY/store-go/store"
 )
 
 var _ store.Batch = (*Batch)(nil)

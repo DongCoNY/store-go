@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/core/appmodule"
+	"github.com/DongCoNY/store-go/core/appmodule"
 )
 
 func TestSource(t *testing.T) {

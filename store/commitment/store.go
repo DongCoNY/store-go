@@ -10,11 +10,11 @@ import (
 	protoio "github.com/cosmos/gogoproto/io"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/internal/encoding"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/snapshots"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/internal/encoding"
+	"github.com/DongCoNY/store-go/store/proof"
+	"github.com/DongCoNY/store-go/store/snapshots"
+	snapshotstypes "github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 const (

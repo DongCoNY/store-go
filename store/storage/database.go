@@ -3,8 +3,8 @@ package storage
 import (
 	"io"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
 )
 
 // Database is an interface that wraps the storage database methods. A wrapper

@@ -14,8 +14,8 @@ import (
 	"github.com/cosmos/gogoproto/proto"
 
 	"cosmossdk.io/errors"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/snapshots/types"
+	"github.com/DongCoNY/store-go/store"
+	"github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 const (

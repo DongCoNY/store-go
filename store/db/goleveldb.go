@@ -13,8 +13,8 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"github.com/syndtr/goleveldb/leveldb/util"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
 )
 
 // GoLevelDB implements RawDB using github.com/syndtr/goleveldb/leveldb.

@@ -7,7 +7,7 @@ import (
 
 	"github.com/cockroachdb/pebble"
 
-	"cosmossdk.io/store/v2"
+	"github.com/DongCoNY/store-go/store"
 )
 
 var _ store.Batch = (*Batch)(nil)

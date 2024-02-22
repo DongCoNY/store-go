@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
-	"cosmossdk.io/store/v2"
+	"github.com/DongCoNY/store-go/store"
 )
 
 const (

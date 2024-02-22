@@ -3,10 +3,10 @@ package store
 import (
 	"io"
 
-	coreheader "cosmossdk.io/core/header"
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/metrics"
-	"cosmossdk.io/store/v2/proof"
+	coreheader "github.com/DongCoNY/store-go/core/header"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store/metrics"
+	"github.com/DongCoNY/store-go/store/proof"
 )
 
 // RootStore defines an abstraction layer containing a State Storage (SS) engine

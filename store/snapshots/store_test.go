@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/snapshots"
-	"cosmossdk.io/store/v2/snapshots/types"
+	dbm "github.com/DongCoNY/store-go/store/db"
+	"github.com/DongCoNY/store-go/store/snapshots"
+	"github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 func setupStore(t *testing.T) *snapshots.Store {

@@ -3,7 +3,7 @@ package db
 import (
 	idb "github.com/cosmos/iavl/db"
 
-	"cosmossdk.io/store/v2"
+	"github.com/DongCoNY/store-go/store"
 )
 
 // Wrapper wraps a RawDB to implement iavl.DB which is used by iavl.Tree.

@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/log"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/snapshots"
-	"cosmossdk.io/store/v2/snapshots/types"
+	dbm "github.com/DongCoNY/store-go/store/db"
+	"github.com/DongCoNY/store-go/store/snapshots"
+	"github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 var opts = snapshots.NewSnapshotOptions(1500, 2)

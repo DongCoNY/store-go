@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store"
 )
 
 // PrefixDB wraps a namespace of another database as a logical database.

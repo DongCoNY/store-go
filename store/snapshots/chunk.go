@@ -5,8 +5,8 @@ import (
 	"math"
 
 	"cosmossdk.io/errors"
-	"cosmossdk.io/store/v2"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/DongCoNY/store-go/store"
+	snapshotstypes "github.com/DongCoNY/store-go/store/snapshots/types"
 )
 
 // ChunkWriter reads an input stream, splits it into fixed-size chunks, and writes them to a

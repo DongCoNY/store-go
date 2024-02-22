@@ -3,8 +3,8 @@ package store
 import (
 	"io"
 
-	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/proof"
+	corestore "github.com/DongCoNY/store-go/core/store"
+	"github.com/DongCoNY/store-go/store/proof"
 )
 
 // Reader wraps the Has and Get method of a backing data store.

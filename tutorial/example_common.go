@@ -34,6 +34,6 @@ func captiveCoreConfig() ledgerbackend.CaptiveCoreConfig {
 
 func panicIf(err error) {
 	if err != nil {
-		panic(fmt.Errorf("An error occurred, panicking: %s\n", err))
+		panic(fmt.Errorf("an error occurred, panicking: %s", err))
 	}
 }

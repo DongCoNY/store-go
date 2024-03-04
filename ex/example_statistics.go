@@ -19,6 +19,9 @@ func statistics() {
 	config.Log = lg
 
 	backend, err := backends.NewCaptive(config)
+
+	fmt.Println("port:", config.Toml.HTTPPort)
+
 	panicIf(err)
 	defer backend.Close()
 

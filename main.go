@@ -1,7 +1,7 @@
 package main
 
 import (
-	ma "github.com/DongCoNY/store-go/tutorial"
+	ma "github.com/DongCoNY/store-go/ex"
 )
 
 func main() {

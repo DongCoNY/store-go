@@ -12,9 +12,10 @@ var (
 
 func captiveCoreConfig() ledgerbackend.CaptiveCoreConfig {
 	archiveURLs := []string{
-		"https://history.stellar.org/prd/core-testnet/core_testnet_001",
-		"https://history.stellar.org/prd/core-testnet/core_testnet_002",
-		"https://history.stellar.org/prd/core-testnet/core_testnet_003",
+		"https://soroban-testnet.stellar.org/",
+		// "https://history.stellar.org/prd/core-testnet/core_testnet_001",
+		// "https://history.stellar.org/prd/core-testnet/core_testnet_002",
+		// "https://history.stellar.org/prd/core-testnet/core_testnet_003",
 	}
 	networkPassphrase := "Test SDF Network ; September 2015"
 	captiveCoreToml, err := ledgerbackend.NewCaptiveCoreToml(ledgerbackend.CaptiveCoreTomlParams{

@@ -66,7 +66,7 @@ func claimables() {
 		case xdr.LedgerEntryTypeTtl:
 
 		default:
-			panic(fmt.Errorf("Unknown type: %+v", entry.Type))
+			panic(fmt.Errorf("unknown type: %+v", entry.Type))
 		}
 
 		fmt.Printf("Processed %d ledger entry changes...\r", entries)

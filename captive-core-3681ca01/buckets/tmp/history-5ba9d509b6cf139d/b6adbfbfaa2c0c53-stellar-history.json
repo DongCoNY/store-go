@@ -1,0 +1,85 @@
+{
+    "version": 1,
+    "server": "stellar-core 20.2.0.rc3 (34d82fc00426643e16b7ad59c9fde169b778eb4b)",
+    "currentLedger": 87167,
+    "networkPassphrase": "Test SDF Network ; September 2015",
+    "currentBuckets": [
+        {
+            "curr": "b1243dfbcde394072312343b9f4004e252e28bc8ecf37f6c2b570deb4483bfee",
+            "next": {
+                "state": 0
+            },
+            "snap": "a6db616dbfee22024e07d037c0bddd982b7f464d827a1d1624493e9177abc428"
+        },
+        {
+            "curr": "e89d2e97cd88d08a6357c30347ef9b5fe5b832d2899b62b4b117de9385abc2f9",
+            "next": {
+                "state": 0
+            },
+            "snap": "312598d6a75be823b4fe7ffb6d749b9a78ea7b0d364240bd440c1a3a308d75b1"
+        },
+        {
+            "curr": "4489fa372c61327e43f4243b00d07029080cbbc540ea4610d6b8f726ceea8283",
+            "next": {
+                "state": 0
+            },
+            "snap": "1b239dc587afa4a6cb74a88a423c7f3eaaa1b3847c95886038ba45a6fb9f159c"
+        },
+        {
+            "curr": "bc579e4a71e62e2a9a2c44c185ce10d3cfcfb8cdbc5c25323b181acf8a16c5fc",
+            "next": {
+                "state": 0
+            },
+            "snap": "6cde43016bc61bdaec575940dacfd0d519ab991806350d30dd6c8e96baddbff9"
+        },
+        {
+            "curr": "e9ce3fdbb44362cee707b65866d1ba516518756a68aa2a32f0392da1f6b3792b",
+            "next": {
+                "state": 0
+            },
+            "snap": "9ba57a274452d3e3a86570dc5f3eee04e88ef73bce102cb7fafa6da37f6e871d"
+        },
+        {
+            "curr": "6eab0125844575140ed5ea6216818b0a7ceeec5c22969cad4d5e8ba48b8d6e3d",
+            "next": {
+                "state": 0
+            },
+            "snap": "5c44348a9e33632efd672e8613380b071f84eed903e0e835ec10094e7899474d"
+        },
+        {
+            "curr": "0f5501deff70b3efc7512caf4130454c15b9695599d2b9f627d7c1af13edf6d9",
+            "next": {
+                "state": 0
+            },
+            "snap": "03669ea28e6115001a7da538772165449f83f80a8caa50b6a8d13462e7f72c26"
+        },
+        {
+            "curr": "80a8f2fb210a2e48b0d85817dec24f73482c41eea60abf11f69ad727eab1ea94",
+            "next": {
+                "state": 0
+            },
+            "snap": "ae6799656d5d44503a11cf2487538334cfc63a14dbdce26043f5a7926c36fcd7"
+        },
+        {
+            "curr": "f358fcaced71954c933ff2b485487337bc44438f63423849f22a6cde73805f2c",
+            "next": {
+                "state": 0
+            },
+            "snap": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+            "curr": "0000000000000000000000000000000000000000000000000000000000000000",
+            "next": {
+                "state": 0
+            },
+            "snap": "0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+            "curr": "0000000000000000000000000000000000000000000000000000000000000000",
+            "next": {
+                "state": 0
+            },
+            "snap": "0000000000000000000000000000000000000000000000000000000000000000"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "error": {
+        "code": -32600,
+        "message": "start is before oldest ledger"
+    },
+    "id": 8675309,
+    "jsonrpc": "2.0"
+}

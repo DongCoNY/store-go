@@ -31,13 +31,6 @@ func GetLatestLedger() (uint32, error) {
 	}
 	defer response.Body.Close()
 
-	// // Decode the JSON response into a custom struct
-	// var responseData ResponseData
-	// if err := json.NewDecoder(response.Body).Decode(&responseData); err != nil {
-	// 	fmt.Println("Error decoding JSON response:", err)
-	// 	return nil, err
-	// }
-
 	// Đọc và hiển thị phản hồi JSON
 	var responseData map[string]interface{}
 	if err := json.NewDecoder(response.Body).Decode(&responseData); err != nil {

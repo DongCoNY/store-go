@@ -36,9 +36,8 @@ func GetOldeastLedger() (uint32, error) {
 		return 0, err
 	}
 
-	// Lấy giá trị của "sequence" từ "result"
 	result := responseData["result"].(map[string]interface{})
-	sequence := result["oldestLedger"].(float64) // Vì "sequence" là số nên chúng ta sử dụng float64
+	sequence := result["oldestLedger"].(float64)
 
 	oldeastLedger := uint32(sequence)
 

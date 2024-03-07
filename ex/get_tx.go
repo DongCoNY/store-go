@@ -51,7 +51,6 @@ func GetInfoTxFromTxHash(txHash string) (*InfoTx, error) {
 		return nil, nil
 	}
 
-	// Lấy giá trị của "result"
 	result := responseData["result"].(map[string]interface{})
 
 	var infoTx InfoTx

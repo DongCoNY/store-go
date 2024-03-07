@@ -1,1 +1,0 @@
-hi store cosmos sdk

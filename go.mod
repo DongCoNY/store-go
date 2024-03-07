@@ -112,3 +112,5 @@ require (
 	gopkg.in/djherbis/stream.v1 v1.3.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/stellar/go => /Users/donglieu/Desktop/go

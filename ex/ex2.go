@@ -10,7 +10,8 @@ import (
 )
 
 func check2() {
-	seq := uint32(435801)
+	seq := uint32(454016)
+	// seq := uint32(453952)
 	ctx := context.Background()
 	backend, err := backends.NewCaptive(config)
 	panicIf(err)
@@ -23,6 +24,10 @@ func check2() {
 	// then retrieve it:434400
 	ledger, err := backend.GetLedger(ctx, seq)
 	panicIf(err)
+
+	a, err := backend.GetLatestLedgerSequence(ctx)
+	panicIf(err)
+	fmt.Println("xxxx", a)
 
 	txReader, err := ingest.NewLedgerTransactionReader(
 		ctx, backend, config.NetworkPassphrase, seq,
@@ -39,9 +44,24 @@ func check2() {
 
 		fmt.Println(tx.Result.Successful())
 		if tx.Result.Successful() {
+			txHash := tx.Result.TransactionHash.HexString()
+			inSuccessfulContractCalls, err := tx.GetDiagnosticEvents()
+
+			panicIf(err)
+			// txReader.GetHeader().Header.PreviousLedgerHash
+
+			// GetDiagnosticEvents()
 			fmt.Println("=====")
+			fmt.Println(txReader.GetHeader().Header.IdPool)
+			fmt.Println(tx.LedgerVersion)
+			fmt.Println(tx.FeeChanges[0].Type)
+			fmt.Println(tx.FeeChanges[0].State.Data)
+			fmt.Println(tx.Envelope.Type)
+			fmt.Println(inSuccessfulContractCalls)
+			// fmt.Println(inSuccessfulContractCalls[0].Event.ContractId.HexString())
+			// fmt.Println(inSuccessfulContractCalls[0].InSuccessfulContractCall)
 			// fmt.Println(tx.)
-			fmt.Println(tx.Result.TransactionHash.HexString())
+			fmt.Println(txHash)
 			// fmt.Println(tx)
 
 			fmt.Println("=====")

@@ -1,7 +1,9 @@
 package tutorial
 
 func Main() {
-	check4()
+	check2()
+	// check3()
+	// check4()
 	// helloworld()
 	// statistics()
 	// claimables()

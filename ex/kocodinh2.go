@@ -53,7 +53,10 @@ func check4() {
 				if tx.Result.Successful() {
 					// fmt.Println("=====")
 					// fmt.Println(tx.)
+
 					fmt.Println(tx.Result.TransactionHash.HexString())
+					fmt.Printf("%v\n", tx)
+
 					// fmt.Println(tx)
 
 					// fmt.Println("=====")

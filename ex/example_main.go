@@ -1,13 +1,15 @@
 package tutorial
 
-// import (
-// 	"fmt"
-// 	"github.com/multiformats/go-multihash"
-// )
+import (
+	"fmt"
+	"time"
+	// "github.com/multiformats/go-multihash"
+)
 
 // import "fmt"
 
 func Main() {
+	start := time.Now()
 	// seq, err := GetLatestLedger()
 	// panicIf(err)
 	// fmt.Println(seq)
@@ -23,4 +25,7 @@ func Main() {
 	// helloworld()
 	// statistics()
 	// claimables()
+	end := time.Now()
+	duration := end.Sub(start)
+	fmt.Println("Thời gian thực hiện:", duration)
 }

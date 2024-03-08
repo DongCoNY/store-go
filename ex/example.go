@@ -62,7 +62,7 @@ func example() {
 				}
 			}
 		}
-		fromSeq += step
+		fromSeq += step + 1
 	}
 
 }

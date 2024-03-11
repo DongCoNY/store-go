@@ -15,7 +15,7 @@ import (
 func example() {
 	var fromSeq, step uint32
 	// 485951 to 486079, 486143, 486207
-	fromSeq = 485951
+	fromSeq = 556898
 	step = 64
 
 	ctx := context.Background()
@@ -34,7 +34,7 @@ func example() {
 		err = backend.PrepareRange(ctx, ledgerRange)
 		if err != nil {
 			if strings.Contains(err.Error(), "is greater than max available in history archives") {
-				break
+				panic(err)
 			}
 			panic(err.Error())
 		}
@@ -58,6 +58,7 @@ func example() {
 				panicIf(err)
 				if tx.Result.Successful() {
 					fmt.Println("txHash:", tx.Result.TransactionHash.HexString())
+					fmt.Println(tx.FeeChanges[0].State.Data.Account.Balance)
 					// fmt.Printf("%v\n", tx)
 				}
 			}

@@ -1,0 +1,12 @@
+{ 
+    "type": "contract", 
+    "ledger": 435801, 
+    "ledgerClosedAt": "2024-03-04T05:45:08Z", 
+    "contractId": "CC7A6IN7ZWR27MH2JJEEYYQJBS6PJXI3QYVNFDCTD4EYN6CSKAA3EP6T", 
+    "id": "0001871751042592768-0000000001", 
+    "pagingToken": "0001871751042592768-0000000001", 
+    "topic": [ "AAAADwAAAAdDT1VOVEVSAA==", "AAAADwAAAAlpbmNyZW1lbnQAAAA=" ], 
+    "value": "AAAAAwAAAAE=", 
+    "inSuccessfulContractCall": true, 
+    "txHash": "54b6e9f1352c8b3014ee71f6acdeef8b8b78aab0a69eb89d512a25dec0713301"
+}

@@ -22,6 +22,7 @@ type InfoTx struct {
 }
 
 // save 1439 ledger
+// hex.EncodeToString
 func GetInfoTxFromTxHash(txHash string) (*InfoTx, error) {
 
 	url := "https://soroban-testnet.stellar.org"

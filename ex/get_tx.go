@@ -51,10 +51,19 @@ func GetInfoTxFromTxHash(txHash string) (*InfoTx, error) {
 		fmt.Println("Error decoding JSON response:", err)
 		return nil, nil
 	}
-
+	var infoTx InfoTx
 	result := responseData["result"].(map[string]interface{})
 
-	var infoTx InfoTx
+	if result["applicationOrder"] == nil {
+		// fmt.Println(responseData)
+		infoTx.OldestLedgerCloseTime = result["oldestLedgerCloseTime"].(string)
+		// infoTx.OldestLedger = result["oldestLedger"].(string)
+		infoTx.Status = result["status"].(string)
+		infoTx.LatestLedgerCloseTime = result["latestLedgerCloseTime"].(string)
+		// infoTx.LatestLedger = result["latestLedger"].(string)
+		return &infoTx, nil
+	}
+
 	infoTx.ApplicationOrder = result["applicationOrder"].(string)
 	infoTx.CreatedAt = result["createdAt"].(string)
 	infoTx.EnvelopeXdr = result["envelopeXdr"].(string)

@@ -16,7 +16,7 @@ import (
 )
 
 const (
-	step = 64
+	step = 1
 )
 
 // 555391, 555327
@@ -32,13 +32,15 @@ type Aggregation struct {
 	index   int64
 }
 
-func start() error {
-	as := Aggregation{
-		txQueue: make(chan txInfo),
-		data:    []txInfo{},
-		index:   0,
-	}
+func (as *Aggregation) new() {
+	as.data = []txInfo{}
+	as.txQueue = make(chan txInfo)
+	as.index = 0
+}
 
+func (as *Aggregation) start() error {
+	// var as Aggregation
+	as.new()
 	// Only log errors from the backend to keep output cleaner.
 	lg := log.New()
 	lg.SetLevel(logrus.ErrorLevel)
@@ -92,21 +94,23 @@ func start() error {
 					}(newTxInfo)
 				}
 			}
-			go as.process()
+			// go as.process()
 		}
 
 		fromSeq += step
+		break
 	}
+	return nil
 }
 
 func (as *Aggregation) process() {
-	// fmt.Println("index:", as.index)
+	fmt.Println("index:", as.index)
 	as.index++
 	tx := <-as.txQueue
 	// fmt.Println(tx)
 	as.data = append(as.data, tx)
-	// fmt.Println("=====")
-	// fmt.Println(as.GetData())
+	fmt.Println("=====")
+	fmt.Println(as.GetData())
 }
 
 func (as *Aggregation) GetData() []txInfo {

@@ -1,6 +1,8 @@
 package tutorial
 
-import "fmt"
+// import "time"
+
+// import "fmt"
 
 // "fmt"
 // "time"
@@ -9,8 +11,12 @@ import "fmt"
 // import "fmt"
 
 func Main() {
-	err := start()
-	fmt.Println(err)
+	// var as Aggregation
+	// as.start()
+	// go as.process()
+	// time.Sleep(50 * time.Second)
+	checkContractDataEntry()
+	// fmt.Println(err)
 
 	// // seq, err := GetLatestLedger()
 	// // panicIf(err)
